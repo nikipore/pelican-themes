@@ -57,9 +57,9 @@ a, a:hover {
     height: auto;
 }
 
-.highlight pre {
-    background-color: #202020;
-    color: #777;
+.highlight pre, code {
+    background-color: #fdf6e3;
+    color: #657b83;
 }
 
 #categories ul, #tags ul {
