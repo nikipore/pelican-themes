@@ -13,12 +13,12 @@
                 </h1>
             </header>
             <div class="entry-content">
+                {{ article.content }}
                 <div class="panel">
                     <div class="panel-body">
                         {% include "includes/article_info.html" %}
                     </div>
                 </div>
-                {{ article.content }}
             </div>
             <!-- /.entry-content -->
             {% include 'includes/addthis.html' %}

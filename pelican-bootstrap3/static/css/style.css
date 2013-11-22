@@ -34,22 +34,12 @@ body {
     color: inherit;
 }
 
+#sidebar a:hover {
+    color: #a10300;
+}
+
 i {
     margin-right: 10px;
-}
-
-a, a:hover {
-    color: inherit;
-}
-
-.entry-content a {
-    text-decoration: none;
-    border-bottom: 1px dotted;
-}
-
-.entry-content a:hover {
-    text-decoration: none;
-    border-bottom: 1px solid;
 }
 
 .entry-content img {
@@ -57,13 +47,27 @@ a, a:hover {
     height: auto;
 }
 
-.highlight pre, code {
-    background-color: #fdf6e3;
-    color: #657b83;
-}
-
 #categories ul, #tags ul {
     list-style: none;
     padding: 0;
     margin-left: 0;
+}
+
+.navbar-brand {
+    font-family: "EB Garamond", Georgia, "Times New Roman", Times, serif;
+    font-size: 2em;
+    padding-top: 18px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+code {
+    font-size: 1.05em;
+}
+
+.highlight pre {
+    background-color: #002b36;
+    color: #839496;
 }
