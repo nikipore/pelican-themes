@@ -67,7 +67,13 @@ code {
     font-size: 1.05em;
 }
 
+a code, a:hover code {
+    color: inherit;
+}
+
 .highlight pre {
-    background-color: #002b36;
-    color: #839496;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 3px;
 }
