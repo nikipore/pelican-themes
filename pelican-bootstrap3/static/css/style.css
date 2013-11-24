@@ -120,3 +120,16 @@ figure.code figcaption a:hover {
     color: #777777;
     text-decoration: underline;
 }
+
+.addthis_toolbox.addthis_32x32_style {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.addthis_toolbox a {
+    color: inherit;
+}
+
+.addthis_toolbox a:hover {
+    color: #a10300;
+}
