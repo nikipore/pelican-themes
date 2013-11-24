@@ -13,9 +13,6 @@
                 {% endfor %}
             {% endif %}
 
-            {% if DISPLAY_CATEGORIES_ON_SIDEBAR is not defined %}
-                {% set DISPLAY_CATEGORIES_ON_SIDEBAR = false %}
-            {% endif %}
             {% if DISPLAY_CATEGORIES_ON_SIDEBAR %}
                 <li class="list-group-item">
                     <h4>
@@ -25,8 +22,8 @@
                 </li>
                 {% for cat, null in categories %}
                     <li class="list-group-item">
+                        <i class="icon-folder-open icon-large"></i>
                         <a href="{{ SITEURL }}/{{ cat.url }}">
-                            <i class="icon-folder-open icon-large"></i>
                             {{ cat }}
                         </a>
                     </li>
@@ -34,16 +31,16 @@
             {% endif %}
 
             <li class="list-group-item">
-                <a href="{{ SITEURL }}/tags.html">
-                    <h4>
-                        <i class="icon-tags icon-large"></i>
+                <h4>
+                    <i class="icon-tags icon-large"></i>
+                    <a href="{{ SITEURL }}/tags.html">
                         Tags
-                    </h4>
-                </a>
+                    </a>
+                </h4>
             </li>
             <li class="list-group-item">
                 <p>
-                    {% for tag in tag_cloud|sort(attribute='0')|sort(attribute='1') %}
+                    {% for tag in tag_cloud %}
                         <a class="tag-{{ tag.1 }}" href="{{ SITEURL }}/{{ tag.0.url }}">
                             {{ tag.0 }}
                         </a>
