@@ -125,11 +125,3 @@ figure.code figcaption a:hover {
     font-size: 24px;
     line-height: 32px;
 }
-
-.addthis_toolbox a {
-    color: inherit;
-}
-
-.addthis_toolbox a:hover {
-    color: #a10300;
-}
