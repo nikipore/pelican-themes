@@ -2,6 +2,10 @@ body {
     padding-top: 70px;
 }
 
+aside {
+    position: fixed;
+}
+
 #sidebar .list-group, #sidebar .list-group-item {
     background-color: transparent;
 }
@@ -10,36 +14,48 @@ body {
     border: none;
 }
 
+.article-info-separator {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tag-list {
+    margin-left: 15px;
+}
+
+.tag-cloud {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.tag {
+    margin: 2px 0px;
+    border-radius: 2em;
+    padding: 1px 8px;
+}
+
 .tag-0 {
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 .tag-1 {
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .tag-2 {
-    font-size: 1em;
+    font-size: 1.0em;
 }
 
 .tag-2 {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .tag-4 {
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
 
 #sidebar {
     padding-top: 0px;
-}
-
-#sidebar a {
-    color: inherit;
-}
-
-#sidebar a:hover {
-    color: #a10300;
 }
 
 i {
@@ -55,11 +71,6 @@ i {
     list-style: none;
     padding: 0;
     margin-left: 0;
-}
-
-.navbar-brand {
-    font-family: "EB Garamond", Georgia, "Times New Roman", Times, serif;
-    font-size: 2em;
 }
 
 a:hover {
@@ -81,30 +92,16 @@ a code, a:hover code {
     border-radius: 3px;
 }
 
-figcaption { // cf. http://octopress.org/docs/plugins/codeblock/
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: #AAAAAA;
-    background-image: linear-gradient(#FFFFFF, #F0F0F0 6%, #E5E5E5 90%, #DDDDDD);
-    border-color: #D5D5D5 #C5C5C5 -moz-use-text-color;
-    border-image: none;
-    border-left: 1px solid #C5C5C5;
-    border-right: 1px solid #C5C5C5;
-    border-style: solid solid none;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-width: 1px 1px 0;
-    color: #777777;
-    font-family: "Helvetica Neue",Arial,"Lucida Grande","Lucida Sans Unicode",Lucida,sans-serif;
+figcaption {
+    background-color: #999999;
+    border-radius: 3px;
+    color: #fff;
     font-size: 13px;
     font-weight: normal;
     line-height: 2em;
     margin-bottom: 0;
     position: relative;
     text-align: center;
-    text-shadow: 0 1px 0 #FFFFFF;
 }
 
 figcaption a {
@@ -117,7 +114,7 @@ figcaption a {
 }
 
 figure.code figcaption a:hover {
-    color: #777777;
+    color: #fff;
     text-decoration: underline;
 }
 

@@ -1,6 +1,6 @@
 <footer class="post-info">
-    <span class="label label-default">Date</span>
     <span class="published">{{ article.locale_date }}</span>
+    <span class="article-info-separator">·</span>
     {# Uncomment if you want the author shown #}
     {#{% if article.author %}#}
     {#<span class="label">By</span>#}
@@ -13,7 +13,7 @@
 
     {% if PDF_PROCESSOR %}
         <span class="label label-default">
-            <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>
+            <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">pdf</a>
         </span>
     {% endif %}
 
