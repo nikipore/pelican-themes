@@ -2,14 +2,6 @@ body {
     padding-top: 70px;
 }
 
-aside {
-    position: fixed;
-}
-
-#sidebar .list-group, #sidebar .list-group-item {
-    background-color: transparent;
-}
-
 .list-group-item {
     border: none;
 }

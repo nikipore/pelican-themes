@@ -1,0 +1,7 @@
+<div class="tag-cloud">
+    {% for tag in tag_cloud %}
+        <a class="btn btn-default btn-xs tag tag-{{ tag.1 }}" role="button" href="{{ SITEURL }}/{{ tag.0.url }}">
+            {{ tag.0 }}
+        </a>
+    {% endfor %}
+</div>

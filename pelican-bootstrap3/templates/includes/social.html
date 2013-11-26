@@ -1,0 +1,10 @@
+{% if SOCIAL %}
+    {% for name, icon, link in SOCIAL %}
+        <li>
+            <a href="{{ link }}">
+                <i title="{{ name }}" class="icon-{{ icon }} icon-large"></i>
+            </a>
+        </li>
+    {% endfor %}
+{% endif %}
+
