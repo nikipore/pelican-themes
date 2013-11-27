@@ -1,5 +1,6 @@
 body {
     padding-top: 70px;
+    padding-bottom: 50px;
 }
 
 .list-group-item {
@@ -104,6 +105,14 @@ figcaption a {
 figure.code figcaption a:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+#share a {
+    color: inherit;
+}
+
+#share a:hover {
+    color: #990000;
 }
 
 .addthis_toolbox.addthis_32x32_style {

@@ -67,8 +67,8 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="navbar-inner container">
 
-    <a href="{{ SITEURL }}" class="navbar-brand navbar-left">{{ SITENAME }}</a>
-    <p class="navbar-text hidden-sm hidden-xs">{{ SITESUBTITLE }}</p>
+    <a href="{{ SITEURL }}" class="navbar-brand">{{ SITENAME }}</a>
+    <p class="navbar-text visible-lg">{{ SITESUBTITLE }}</p>
 
     <ul class="nav navbar-nav navbar-right hidden-xs">
         <li>
@@ -76,10 +76,16 @@
                 <span class="icon-bar"><i class="icon-chevron-left icon-large"></i></span>
             </a>
         </li>
-        {% include 'includes/social.html' %}
-        {# <li><a title="tags" href="{{ SITEURL }}/tags.html"><i class="icon-tag icon-large"></i></a></li> #}
     </ul>
-     
+
+    <ul class="nav navbar-nav visible-xs">
+        <li class="pull-left">
+            <a title="toggle navigation" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"><i class="icon-chevron-down icon-large"></i></span>
+            </a>
+        </li>
+    </ul>
+
     <!-- collapsed navbar -->
     <div class="nav-collapse collapse navbar-right">
     <ul class="nav navbar-nav">
@@ -98,6 +104,7 @@
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
+        {% include 'includes/social.html' %}
     </ul>
     </div>
 
