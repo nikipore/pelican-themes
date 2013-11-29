@@ -1,8 +1,3 @@
-body {
-    padding-top: 70px;
-    padding-bottom: 50px;
-}
-
 .list-group-item {
     border: none;
 }
@@ -64,10 +59,6 @@ i {
 
 a:hover {
     text-decoration: none;
-}
-
-code {
-    font-size: 1.05em;
 }
 
 a code, a:hover code {

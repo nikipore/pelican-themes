@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
-<head>
+<header class="span8" id="top-header">
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,25 +62,22 @@
     {% endif %}
 
     {% include 'includes/ga.html' %}
-</head>
+</header>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="navbar-inner container">
-
+    <div>
     <a href="{{ SITEURL }}" class="navbar-brand">{{ SITENAME }}</a>
     <p class="navbar-text visible-lg">{{ SITESUBTITLE }}</p>
 
-    <ul class="nav navbar-nav navbar-right hidden-xs">
-        <li>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="hidden-xs">
             <a title="toggle navigation" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"><i class="icon-chevron-left icon-large"></i></span>
             </a>
         </li>
-    </ul>
-
-    <ul class="nav navbar-nav visible-xs">
-        <li class="pull-left">
-            <a title="toggle navigation" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <li class="visible-xs">
+            <a title="toggle navigation" class="btn btn-navbar pull-left" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"><i class="icon-chevron-down icon-large"></i></span>
             </a>
         </li>
@@ -107,7 +104,7 @@
         {% include 'includes/social.html' %}
     </ul>
     </div>
-
+    </div>
     </div>
 
 </nav>
